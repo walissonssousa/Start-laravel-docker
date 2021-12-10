@@ -25,6 +25,15 @@ Para ambientes de desenvolvimento,  deverá obrigatoriamente utilizar o docker p
 
 --docker ps
 
+depois de listado pegar o id do container laravelapp
+
+rodar comando do artisan dentro da IDE 
+
+-- docker exec -it "numero do id" bash
+
+gerando a KEY
+
+--php artisan key:generate
 
 #Configurando o Backend da aplicação
 
