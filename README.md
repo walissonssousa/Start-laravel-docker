@@ -31,19 +31,20 @@ rodar comando do artisan dentro da IDE
 
 -- docker exec -it "numero do id" bash
 
-gerando a KEY
+#instalar composer
 
---php artisan key:generate
+--composer install
+
+php artisan key:generate
 
 #Configurando o Backend da aplicação
 
---docker-compose exec apimailermec sh -c "composer install"
+--cp .env.example .env
 
---docker-compose exec apimailermec sh -c "cp .env.example .env"
+--php artisan key:generate
 
---docker-compose exec apimailermec sh -c "php artisan key:generate"
 
-```
+
 
 # Visualizando aplicação localhost
 * API 
